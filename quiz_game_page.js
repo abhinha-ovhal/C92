@@ -28,12 +28,12 @@ function check(){
     document.getElementById("input_check_box").value = "";
     if(get_answer == actual_answer){
         if(answer_turn == "player1"){
-            update_player1_score = player1_score + 1;
-            document.getElementById("player1_score").innerHTML = update_player1_score;
+            player1_score = player1_score + 1;
+            document.getElementById("player1_score").innerHTML = player1_score;
         }
         else{
-            update_player2_score = player2_score + 1;
-            document.getElementById("player2_score").innerHTML = update_player2_score;
+            player2_score = player2_score + 1;
+            document.getElementById("player2_score").innerHTML = player2_score;
         }
     } 
     if(question_turn == "player1"){
@@ -53,6 +53,5 @@ function check(){
         answer_turn = "player1";
         document.getElementById("player_answer").innerHTML = "Answer Turn - " + player1_name;
     }
-    document.getElementById("number_1").innerHTML = "";
-    document.getElementById("number_2").innerHTML = "";
+    document.getElementById("output").innerHTML = "";
 }
